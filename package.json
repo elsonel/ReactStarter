@@ -21,8 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "start-storybook -c src/UI/.storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -c src/UI/.storybook -s public"
   },
   "eslintConfig": {
     "extends": [
@@ -30,6 +30,14 @@
       "react-app/jest"
     ],
     "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      },
       {
         "files": [
           "**/*.stories.*"
@@ -71,6 +79,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
     "prop-types": "^15.8.1",
+    "storybook": "^6.5.13",
     "typescript": "^4.8.4",
     "webpack": "^5.74.0"
   }
