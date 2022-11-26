@@ -2,7 +2,15 @@
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "prettier/prettier": ["error", { "singleQuote": true }, {"endOfLine": "auto"}]
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      },
+      {
+        "singleQuote": true
+      }
+    ]
   },
   "extends": ["prettier"]
 }
