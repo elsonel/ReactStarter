@@ -1,2 +1,3 @@
+export * from './atoms';
 export * from './groups';
-export * from './text';
+export * from './texts';

@@ -2,7 +2,7 @@ import { Meta, Story } from '@storybook/react';
 import { Paragraph, ParagraphProps } from './Paragraph';
 
 export default {
-  title: 'Text/Paragraph',
+  title: 'Texts/Paragraph',
   component: Paragraph,
   args: {
     children: 'Hello World',

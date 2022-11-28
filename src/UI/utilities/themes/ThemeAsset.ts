@@ -4,6 +4,10 @@ import { ChevronUpDown } from '@styled-icons/fluentui-system-regular/ChevronUpDo
 import { Close } from '@styled-icons/zondicons/Close';
 import { ArrowRight } from '@styled-icons/zondicons/ArrowRight';
 import { ArrowLeft } from '@styled-icons/zondicons/ArrowLeft';
+import ImageLandscape from '../../assets/examples/landscape.jpg';
+import ImagePortrait from '../../assets/examples/portrait.jpg';
+import ImageSmall from '../../assets/examples/small.jpg';
+import ImageSquare from '../../assets/examples/square.jpg';
 
 export type IconSVGType =
   | string
@@ -24,7 +28,6 @@ export interface IconInterface {
 }
 
 export interface ImageInterface {
-  profile: string;
   exampleSmall: string;
   exampleSquare: string;
   exampleLandscape: string;
@@ -51,10 +54,9 @@ export const ThemeAsset: ThemeAssetInterface = {
     modalLeft: ArrowLeft,
   },
   image: {
-    profile: '/images/profile.png',
-    exampleSmall: '/images/examples/small.jpg',
-    exampleSquare: '/images/examples/square.jpg',
-    exampleLandscape: '/images/examples/landscape.jpg',
-    examplePortrait: '/images/examples/portrait.jpg',
+    exampleSmall: ImageSmall,
+    exampleSquare: ImageSquare,
+    exampleLandscape: ImageLandscape,
+    examplePortrait: ImagePortrait,
   },
 };
