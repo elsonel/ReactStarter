@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react';
-import { Paragraph, ParagraphProps } from './Paragraph';
+import { Paragraph, IParagraphProps } from './Paragraph';
 
 export default {
   title: 'Texts/Paragraph',
@@ -9,7 +9,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<ParagraphProps> = (args) => <Paragraph {...args} />;
+const Template: Story<IParagraphProps> = (args) => <Paragraph {...args} />;
 
 export const Small = Template.bind({});
 Small.args = {

@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react';
-import { SearchForm, SearchFormProps } from './SearchForm';
+import { SearchForm, ISearchFormProps } from './SearchForm';
 import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 export default {
@@ -8,7 +8,7 @@ export default {
   args: {},
 } as Meta;
 
-const Template: Story<SearchFormProps> = (args) => <SearchForm {...args} />;
+const Template: Story<ISearchFormProps> = (args) => <SearchForm {...args} />;
 
 export const Basic = Template.bind({});
 Basic.args = {

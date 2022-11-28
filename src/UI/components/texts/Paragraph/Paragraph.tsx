@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-export interface ParagraphProps
+export interface IParagraphProps
   extends React.HTMLAttributes<HTMLParagraphElement> {
   children?: React.ReactNode; // text
   size?: string; // font size
@@ -12,7 +12,7 @@ export interface ParagraphProps
   isWrapped?: boolean; // text wrapping
 }
 
-export const Paragraph: React.FC<ParagraphProps> = ({
+export const Paragraph: React.FC<IParagraphProps> = ({
   children = '',
   size = 'default',
   weight = 'regular',
@@ -21,7 +21,7 @@ export const Paragraph: React.FC<ParagraphProps> = ({
   color = 'text',
   isWrapped = true,
   ...props
-}: ParagraphProps) => {
+}: IParagraphProps) => {
   return (
     <Text
       $size={size}

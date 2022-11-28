@@ -33,12 +33,12 @@ enum EVENT_TYPES {
   OTHER = 'Other',
 }
 
-export interface SearchFormProps
+export interface ISearchFormProps
   extends React.HTMLAttributes<HTMLParagraphElement> {}
 
-export const SearchForm: React.FC<SearchFormProps> = ({
+export const SearchForm: React.FC<ISearchFormProps> = ({
   ...props
-}: SearchFormProps) => {
+}: ISearchFormProps) => {
   const [cardType, setCardType] = useState(CARD_TYPES.ALL);
 
   return (
